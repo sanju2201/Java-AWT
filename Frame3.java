@@ -3,15 +3,15 @@ import java.awt.event.*;
 
 public class Frame3 extends Frame implements ActionListener {
 
-    Button b1, b2;
+    Button b1, b2, b3, b4;
     Label l1, l2;
     TextField t1, t2;
 
     Frame3() {
         setLayout(null);
 
-        l1 = new Label("Name");
-        l2 = new Label("Mob. No.");
+        l1 = new Label("1st Number");
+        l2 = new Label("2nd Number");
         add(l1);
         add(l2);
         l1.setBounds(80, 100, 100, 30);
@@ -24,15 +24,24 @@ public class Frame3 extends Frame implements ActionListener {
         t1.setBounds(200, 100, 100, 30);
         t2.setBounds(200, 150, 100, 30);
 
-        b1 = new Button("OK");
-        b2 = new Button("Cancel");
+        b1 = new Button("Add");
+        b2 = new Button("Sub");
+        b3 = new Button("Multiply");
+        b4 = new Button("Divide");
         add(b1);
         add(b2);
-        b1.setBounds(140, 220, 70, 30);
-        b2.setBounds(220, 220, 70, 30);
+        add(b3);
+        add(b4);
+
+        b1.setBounds(30, 220, 70, 30);
+        b2.setBounds(120, 220, 70, 30);
+        b3.setBounds(210, 220, 70, 30);
+        b4.setBounds(300, 220, 70, 30);
 
         b1.addActionListener(this);
         b2.addActionListener(this);
+        b3.addActionListener(this);
+        b4.addActionListener(this);
 
     }
 
@@ -46,13 +55,32 @@ public class Frame3 extends Frame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             // System.out.println("A");
+            String x = t1.getText();
+            int a = Integer.parseInt(x);
+            int b = Integer.parseInt(t2.getText());
+            System.out.println(a + b);
 
         }
         if (e.getSource() == b2) {
             // System.out.println("B");
-
+            int a = Integer.parseInt(t1.getText());
+            int b = Integer.parseInt(t2.getText());
+            System.out.println(a - b);
         }
 
+        if (e.getSource() == b3) {
+            // System.out.println("B");
+            int a = Integer.parseInt(t1.getText());
+            int b = Integer.parseInt(t2.getText());
+            System.out.println(a * b);
+        }
+
+        if (e.getSource() == b4) {
+            // System.out.println("B");
+            int a = Integer.parseInt(t1.getText());
+            int b = Integer.parseInt(t2.getText());
+            System.out.println(a / b);
+        }
     }
 
 }
