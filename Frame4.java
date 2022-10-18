@@ -62,8 +62,8 @@ public class Frame4 extends Frame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             String st1 = ch1.getSelectedItem();
-
             int a = Integer.parseInt(st1);
+
             int b = Integer.parseInt(ch2.getSelectedItem());
             int c = Integer.parseInt(ch3.getSelectedItem());
             System.out.println(a + b + c);

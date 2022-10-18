@@ -47,14 +47,14 @@ public class Frame5 extends Frame implements ActionListener {
         if (e.getSource() == b1) {
             int pizzaPrice = 100;
             int pastaPrice = 75;
-            if (e.equals("Pizza")) {
+            if (ch1.getSelectedItem().equals("Pizza")) {
                 int a = Integer.parseInt(ch2.getSelectedItem());
-                // System.out.println(a * pizzaPrice);
-                System.out.println("ll");
-            } else if (e.equals("Pasta")) {
+                System.out.println(a * pizzaPrice);
+
+            } else if (ch1.getSelectedItem().equals("Pasta")) {
                 int a = Integer.parseInt(ch2.getSelectedItem());
-                // System.out.println(a * pastaPrice);
-                System.out.println("jj");
+                System.out.println(a * pastaPrice);
+
             }
         }
 
