@@ -1,11 +1,11 @@
 import java.awt.*;
 
-public class ButLabTextfield extends Frame {
+public class ButtonLabelTextfield extends Frame {
     Button b1, b2;
     Label l1, l2, l3, l4;
     TextField t1, t2;
 
-    ButLabTextfield() {
+    ButtonLabelTextfield() {
         // GridLayout is the style in which the element will be get arranged
         GridLayout g = new GridLayout(4, 2);
         setLayout(g);
@@ -28,7 +28,7 @@ public class ButLabTextfield extends Frame {
     }
 
     public static void main(String[] args) {
-        ButLabTextfield x = new ButLabTextfield();
+        ButtonLabelTextfield x = new ButtonLabelTextfield();
         x.setSize(1000, 700);
         x.setVisible(true);
     }

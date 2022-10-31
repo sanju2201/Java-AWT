@@ -1,10 +1,10 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Frame6_IL extends Frame implements ItemListener {
+public class ItmListnr extends Frame implements ItemListener {
     Choice c1;
 
-    Frame6_IL() {
+    ItmListnr() {
         setLayout(null);
         c1 = new Choice();
         add(c1);
@@ -17,7 +17,7 @@ public class Frame6_IL extends Frame implements ItemListener {
     }
 
     public static void main(String[] args) {
-        Frame6_IL fr = new Frame6_IL();
+        ItmListnr fr = new ItmListnr();
         fr.setSize(400, 300);
         fr.setVisible(true);
 

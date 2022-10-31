@@ -1,12 +1,12 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Frame5 extends Frame implements ActionListener {
+public class PizzaPasta extends Frame implements ActionListener {
     Button b1;
     Choice ch1, ch2;
     Label l1, l2;
 
-    Frame5() {
+    PizzaPasta() {
         setLayout(null);
         l1 = new Label("Item");
         add(l1);
@@ -37,7 +37,7 @@ public class Frame5 extends Frame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        Frame5 fr = new Frame5();
+        PizzaPasta fr = new PizzaPasta();
         fr.setSize(400, 300);
         fr.setVisible(true);
 

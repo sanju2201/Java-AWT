@@ -1,13 +1,13 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Frame3 extends Frame implements ActionListener {
+public class AddSubMulDiv extends Frame implements ActionListener {
 
     Button b1, b2, b3, b4;
     Label l1, l2;
     TextField t1, t2;
 
-    Frame3() {
+    AddSubMulDiv() {
         setLayout(null);
 
         l1 = new Label("1st Number");
@@ -46,7 +46,7 @@ public class Frame3 extends Frame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        Frame3 x = new Frame3();
+        AddSubMulDiv x = new AddSubMulDiv();
         x.setSize(400, 350);
         x.setVisible(true);
 

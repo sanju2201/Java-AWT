@@ -1,7 +1,7 @@
 
 import java.awt.*;
 
-public class Frame1st extends Frame {
+public class AddingDifferentElementOnFrame extends Frame {
     Button b1, b2;
     TextField t1, t2;
     Choice c1, c2;
@@ -9,7 +9,7 @@ public class Frame1st extends Frame {
     CheckboxGroup cbg, cbg1;
     Label l1, l2;
 
-    Frame1st() {
+    AddingDifferentElementOnFrame() {
         setLayout(null);
         // Creating Button
         b1 = new Button("OK");
@@ -77,7 +77,7 @@ public class Frame1st extends Frame {
     }
 
     public static void main(String[] args) {
-        Frame1st f = new Frame1st();
+        AddingDifferentElementOnFrame f = new AddingDifferentElementOnFrame();
         f.setSize(500, 500);
         f.setVisible(true);
 

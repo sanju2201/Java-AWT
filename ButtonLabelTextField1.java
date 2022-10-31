@@ -1,12 +1,12 @@
 import java.awt.*;
 
-public class ButLabTextField1 extends Frame {
+public class ButtonLabelTextField1 extends Frame {
 
     Button b1, b2;
     Label l1, l2;
     TextField t1, t2;
 
-    ButLabTextField1() {
+    ButtonLabelTextField1() {
         GridLayout g = new GridLayout(3, 2);
         setLayout(g);
         b1 = new Button("Sign in");
@@ -25,7 +25,7 @@ public class ButLabTextField1 extends Frame {
     }
 
     public static void main(String[] args) {
-        ButLabTextField1 x = new ButLabTextField1();
+        ButtonLabelTextField1 x = new ButtonLabelTextField1();
         x.setSize(1000, 500);
         x.setVisible(true);
 

@@ -1,12 +1,13 @@
+
 import java.awt.*;
 import java.awt.event.*;
 
-public class Frame4 extends Frame implements ActionListener {
+public class SubjectMarks extends Frame implements ActionListener {
     Button b1;
     Label l1, l2, l3;
     Choice ch1, ch2, ch3;
 
-    Frame4() {
+    SubjectMarks() {
         setLayout(null);
 
         b1 = new Button("Total");
@@ -53,7 +54,7 @@ public class Frame4 extends Frame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        Frame4 fr = new Frame4();
+        SubjectMarks fr = new SubjectMarks();
         fr.setSize(425, 300);
         fr.setVisible(true);
 
